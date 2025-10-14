@@ -84,13 +84,7 @@ You can adjust these values in the script to fine-tune the layout:
 
 ---
 
-## 🖼 Example
 
-| Input Excel | Output Certificate |
-|--------------|--------------------|
-| ![Excel Example](https://via.placeholder.com/300x100?text=names.xlsx) | ![Certificate Example](https://via.placeholder.com/400x250?text=Generated+Certificate) |
-
----
 
 ## 🚀 Future Improvements
 - Add support for event name, date, and signature placement  
