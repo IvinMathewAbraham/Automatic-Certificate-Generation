@@ -17,7 +17,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Load names from Excel
 df = pd.read_excel(EXCEL_PATH)
-names = df['Name']  # Make sure your Excel has a column named 'Name'
+names = df['Name']  # Ensure your Excel has a column named 'Name'
 
 # Load certificate template
 template = Image.open(TEMPLATE_PATH)
@@ -52,11 +52,13 @@ for name in names:
     draw.text((x, y), name, fill="black", font=font)
     
     # Clean name for filename
-    safe_name = re.sub(r'[\\/*?:"<>|]',"", name)
+    safe_name = re.sub(r'[\\/*?:"<>|]', "", name)
     
-    # Save certificate as PNG
-    output_path = os.path.join(OUTPUT_DIR, f"Certificate_{safe_name}.png")
-    img.save(output_path)
+    # Save certificate as PDF instead of PNG
+    output_path = os.path.join(OUTPUT_DIR, f"Certificate_{safe_name}.pdf")
+    rgb_img = img.convert("RGB")  # Ensure RGB mode for PDF
+    rgb_img.save(output_path, "PDF", resolution=100.0)
+    
     print(f"Saved: {output_path}")
 
-print("✅ All certificates generated!")
+print("✅ All certificates generated as PDF!")
