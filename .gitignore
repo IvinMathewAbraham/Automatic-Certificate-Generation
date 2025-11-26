@@ -1,0 +1,65 @@
+certificates
+names.xlsx
+certificate_template.jpg
+# ---- Python & Virtual Environment ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment folders
+venv/
+.venv/
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- OS-specific files ----
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# ---- Python Package Builds ----
+build/
+dist/
+*.egg-info/
+
+# ---- Tkinter App Cache ----
+*.tkdnd
+
+# ---- Temporary Files ----
+*.tmp
+*.temp
+
+# ---- Excel / Data Files ----
+*.xlsx
+*.xls
+*.csv
+
+# ---- Certificate Outputs ----
+certificates/
+output/
+generated/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# ---- Environment variables ----
+.env
+.env.*
+
+# ---- Backup files ----
+*~
+*.bak
+*.swp
+*.swo
